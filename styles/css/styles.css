@@ -5,6 +5,17 @@ body {
     padding: 0;
   }
 
+  
+  .cta-link {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
 /* Estilos para el botón de "Volver arriba" */
 #back-to-top, #top {
   cursor: default;
@@ -179,6 +190,45 @@ button[type='reset'] {
   color: white;
   margin-left: 10px; /* Dar un espacio entre los botones */
 }
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal:target {
+  display: block;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 20%;
+}
+
+.close-btn {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: black;
+  cursor: pointer;
+}
+
 
   /* Estilos  del footer */
   .govuk-footer {
