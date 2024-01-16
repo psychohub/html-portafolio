@@ -8,10 +8,12 @@
 </head>
 <body>
   <header>
+    <div></div>
     <nav>
       <ul>
         <li><a href="#info">Info</a></li>
         <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Habilidades</a></li>
         <li><a href="#proyectos">Proyectos</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
@@ -22,10 +24,47 @@
   </header>
 
   <main>
+    <div id="top"></div>
+    <a href="#top" id="back-to-top" class="back-to-top" title="Volver arriba" aria-hidden="true">^</a>
     <section id="info">
       <h1>¡Bienvenido al portafolio de Falcon!</h1>
       <p>Falcon es un personaje extraordinario con increíbles habilidades aviares y tácticas. Como un experto entrenador de aves y hábil combatiente, Falcon es una fuerza a tener en cuenta en el mundo de los superhéroes.</p>
       <img src="https://eloutput.com/wp-content/uploads/2022/03/falcon-1024x536.jpg.webp" alt="Falcon - Foto de perfil">
+      <h1>Información de Samuel Thomas Wilson (Falcon)</h1>
+      <p><strong>Alias:</strong> Falcon</p>
+      <p><strong>Creado por:</strong> Stan Lee y Gene Colan</p>
+      <p><strong>Primera aparición:</strong> Captain America #117 (Septiembre 1969)</p>
+    
+      <h2>Habilidades y competencias:</h2>
+      <ul>
+        <li>Vuelo a través de un arnés de alas mecánicas</li>
+        <li>Enlace empático y telepático limitado con todas las aves</li>
+        <li>Artes marciales, acrobacias y habilidades aéreas</li>
+        <li>Táctico y estratega competente</li>
+        <li>Combate cuerpo a cuerpo</li>
+        <li>Entrenador experto de aves</li>
+      </ul>
+    
+      <h2>Experiencia laboral:</h2>
+      <ul>
+        <li>Socio de Captain America y Bucky Barnes</li>
+        <li>Miembro de los Avengers, S.H.I.E.L.D., “Defenders for a Day”, Heroes for Hire, Mighty Avengers, Avengers Unity Squad</li>
+        <li>Líder de los Avengers después de la jubilación de Steve Rogers</li>
+      </ul>
+    
+      <h2>Logros notables:</h2>
+      <ul>
+        <li>Primer superhéroe afroamericano en los cómics convencionales</li>
+        <li>Asumió el manto de Captain America después de la jubilación de Steve Rogers</li>
+      </ul>
+    
+      <h2>Información adicional:</h2>
+      <ul>
+        <li>Creció en un barrio difícil de Harlem</li>
+        <li>Su padre, un ministro, fue asesinado al intentar detener una pelea</li>
+        <li>Se convirtió en trabajador social y voluntario</li>
+        <li>Apareció en varias películas y series de televisión del Universo Cinematográfico de Marvel</li>
+      </ul>
     </section>
 
     <section id="about">
@@ -56,6 +95,89 @@
         </div>
       </div>
     </section>
+    <section id="proyectos">
+      <h2>Proyectos</h2>
+      <ul>
+        <li>
+          <h3>Asociación con Captain America y Bucky Barnes</h3>
+          <p>Falcon ha trabajado en estrecha colaboración con Captain America y Bucky Barnes, formando un equipo formidable en la lucha contra el crimen y la injusticia.</p>
+        </li>
+        <li>
+          <h3>Miembro de los Avengers, S.H.I.E.L.D., "Defenders for a Day", Heroes for Hire, Mighty Avengers, Avengers Unity Squad</h3>
+          <p>Falcon ha sido miembro de varios equipos de superhéroes, aportando sus habilidades únicas y liderazgo en numerosas misiones y operaciones.</p>
+        </li>
+        <li>
+          <h3>Líder de los Avengers después de la jubilación de Steve Rogers</h3>
+          <p>Tras la jubilación de Steve Rogers, Falcon asumió el manto de líder de los Avengers, guiando al equipo en nuevas direcciones y enfrentando desafíos emergentes.</p>
+        </li>
+        <li>
+          <h3>Apariciones en el Universo Cinematográfico de Marvel</h3>
+          <p>Falcon ha aparecido en varias películas y series de televisión del Universo Cinematográfico de Marvel, incluyendo "Captain America: The Winter Soldier", "Avengers: Age of Ultron", "Ant-Man", "Captain America: Civil War", "Avengers: Infinity War", "Avengers: Endgame", y la miniserie "The Falcon and the Winter Soldier".</p>
+        </li>
+        <li>
+          <h3>Proyecto "Armor Wars"</h3>
+          <p>Se espera que Falcon y el Soldado del Invierno se conecten de alguna manera con otra serie de Disney+, "Armor Wars".</p>
+        </li>
+        <li>
+          <h3>Proyecto "Captain America: Brave New World"</h3>
+          <p>Falcon, ahora como el nuevo Captain America, será el personaje principal en la próxima película "Captain America: Brave New World".</p>
+        </li>
+      </ul>
+    </section>
+    <section id="contacto">
+      <h2>Formulario de Contacto</h2>
+      <form>
+        <div class="form-group">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div class="form-group">
+          <label for="apellidos">Apellidos:</label>
+          <input type="text" id="apellidos" name="apellidos" required>
+        </div>
+        <div class="form-group">
+          <label for="teléfono">Teléfono:</label>
+          <input type="tel" id="teléfono" name="teléfono" pattern="[0-9]{10}" title="Por favor ingrese un número de teléfono válido (10 dígitos)" required>
+          <small>Ingrese un número de teléfono válido (10 dígitos).</small>
+        </div>
+        <div class="form-group">
+          <label>¿Cómo me conociste?</label>
+          <div class="radio-group">
+            <input type="radio" id="universidad" name="conocimiento" value="universidad" required>
+            <label for="universidad">Universidad</label>
+          </div>
+          <div class="radio-group">
+            <input type="radio" id="keepcoding" name="conocimiento" value="keepcoding" required>
+            <label for="keepcoding">Keepcoding kick-off</label>
+          </div>
+          <div class="radio-group">
+            <input type="radio" id="colegio" name="conocimiento" value="colegio" required>
+            <label for="colegio">Colegio</label>
+          </div>
+          <div class="radio-group">
+            <input type="radio" id="github" name="conocimiento" value="github" required>
+            <label for="github">En Github</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="github-tag">Tag de Github:</label>
+          <input type="text" id="github-tag" name="github-tag" pattern="^@[^\s]+" title="Debe empezar con @" required>
+        </div>
+        <div class="form-group">
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" maxlength="180" required></textarea>
+        </div>
+        <div class="form-group newsletter-group">
+          <input type="checkbox" id="newsletter" name="newsletter">
+          <label for="newsletter">Acceso a la newsletter</label>
+      </div>
+      
+        <button type="submit">Guardar</button>
+        <button type="reset">Reset</button>
+       
+      </form>
+    </section>
+ 
 
   </main>
 
