@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="/styles/css/styles.css">
   <title>Portafolio de Falcon</title>
 </head>
 <body>
@@ -12,9 +12,13 @@
       <ul>
         <li><a href="#info">Info</a></li>
         <li><a href="#about">About Me</a></li>
-        <li><a href="#contact">Contacto</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
       </ul>
     </nav>
+    <div class="profile-picture">
+      <img src="icons/falcon-profile.png" alt="Mi Foto de Perfil">
+    </div>
   </header>
 
   <main>
@@ -32,36 +36,50 @@
       <div class="skills">
         <div>
           <p>Entrenador experto de aves</p>
-          <div class="progress" style="--skill-level: 90%;"></div>
+          <div class="progress" style="--skill-level: 90%;"  data-level="90%"></div>
         </div>
         <div>
           <p>Combatiente cuerpo a cuerpo</p>
-          <div class="progress" style="--skill-level: 85%;"></div>
+          <div class="progress" style="--skill-level: 85%;"  data-level="85%"></div>
         </div>
         <div>
           <p>Vuelo mediante arnés de alas</p>
-          <div class="progress" style="--skill-level: 95%;"></div>
+          <div class="progress" style="--skill-level: 95%;"  data-level="95%"></div>
         </div>
         <div>
           <p>Táctico y estratega competente</p>
-          <div class="progress" style="--skill-level: 80%;"></div>
+          <div class="progress" style="--skill-level: 80%;"  data-level="80%"></div>
         </div>
         <div>
           <p>Vínculo empático y telepático con aves</p>
-          <div class="progress" style="--skill-level: 100%;"></div>
+          <div class="progress" style="--skill-level: 100%;"  data-level="100%"></div>
         </div>
       </div>
     </section>
 
   </main>
 
-  <footer>
-    <h3>Sígueme en redes sociales:</h3>
-    <ul class="social-links">
-      <li><a href="#">Twitter</a></li>
-      <li><a href="#">Instagram</a></li>
-      <li><a href="#">Facebook</a></li>
-    </ul>
+  <footer class="govuk-footer">
+    <div class="govuk-footer__meta">
+      <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+        <h2 class="govuk-visually-hidden">Redes Sociales</h2>
+        <ul class="govuk-footer__inline-list">
+          <li class="govuk-footer__inline-list-item">
+            <a class="govuk-footer__link" href="https://www.facebook.com"><img src="icons/facebook.jpeg" alt="Facebook"></a>
+          </li>
+          <li class="govuk-footer__inline-list-item">
+            <a class="govuk-footer__link" href="https://www.twitter.com"><img src="icons/twitter-logo-2429.png" alt="Twitter"></a>
+          </li>
+          <li class="govuk-footer__inline-list-item">
+            <a class="govuk-footer__link" href="https://www.instagram.com"><img src="icons/instagram_1384015.png" alt="Instagram"></a>
+          </li>
+          <li class="govuk-footer__inline-list-item">
+            <a class="govuk-footer__link" href="https://www.linkedin.com"><img src="icons/icons8-linkedin-48.png" alt="Linkedin"></a>
+          </li>
+        </ul>
+        <p class="govuk-footer__licence-description">© 2024 psychohub</p>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
