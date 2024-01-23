@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  #error {
+    max-width: 800px;
+    padding: 20px;
+  }
+  
+  #error h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  #error p {
+    margin-bottom: 20px;
+  }
+  
+  #error img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  #error a {
+    color: #ffcc00;
+    text-decoration: none;
+  }
+  
+  #error a:hover {
+    color: #fff;
+  }
+  

@@ -79,12 +79,16 @@ body {
     content: attr(data-label) ' ' attr(data-level);
     display: block;
     height: 100%;
-    width: var(--skill-level);
+    width: 0;
     background-color: #ffcc00;
-    transition: width 1s;
     text-align: center;
     line-height: 20px;
     color: #333;
+    animation: load 2s forwards;
+  }
+  
+  @keyframes load {
+    to {width: var(--skill-level);}
   }
   
   /* Estilos formulario contacto */
@@ -200,7 +204,7 @@ button[type='reset'] {
 #menu-icon span {
   box-sizing: border-box;
   display: block;
-  background-color: #fff; /* Fondo blanco */
+  background-color: #fff; 
   height: 4px;
   width: 30px;
   margin: 6px 0;
@@ -215,6 +219,40 @@ label[for="menu-icon"] {
 #menu-icon span:nth-child(2),
 #menu-icon span:nth-child(3) {
   margin-top: 10px;
+}
+
+/* Estilos por defecto para pantallas grandes */
+nav {
+  display: block;
+}
+
+#menu-icon {
+  display: none;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+  }
+
+  #menu-icon {
+    display: block;
+  }
+}
+
+/* Estilos para cuando el checkbox está marcado */
+#menu-icon:checked ~ nav {
+  display: block;
+}
+
+ /* Centrar section info */
+ section {
+  max-width: 800px; 
+  margin: 0 auto;  
+  padding: 20px;  
+  padding-top: 50px;
+  margin-top: -50px;
 }
 
 /* Cambia el color del icono al hacer clic */
@@ -240,10 +278,6 @@ input[type="checkbox"] {
 input[type="checkbox"]:checked ~ nav ul {
   display: block;
 }
-
-
-
-
 
 /* Medios para dispositivos móviles */
 @media screen and (max-width: 768px) {
